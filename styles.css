@@ -7,6 +7,13 @@ body
 
 }
 
+#topBar{
+  width:100%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(131, 168, 207);
+}
+
 #title
 {
   text-align: center;
@@ -28,19 +35,20 @@ body
 .topButtons{
   width:100%;
   text-align: center;
+  position: fixed;
 }
 
 .topButtons > div
 {
   border:2px solid rgb(241, 241, 241);
   float: left;
-  width: 18%;
-  background-color: rgb(241, 241, 241);
+  width: 14.9%;
+  background-color: rgb(242, 203, 203);
   border-radius: 10px;
   padding-left: 5px;
   padding-right: 5px;
   font-size: 8px;
-  font-family: Bookman;
+  font-family: Times;
   text-align: center;
   margin:3px;
 }
@@ -55,7 +63,7 @@ h1{
 }
 .CPs
 {
-  margin-top: 100px;
+  margin-top: 10px;
   background-color: rgb(241, 241, 241);
 }
 
@@ -63,10 +71,62 @@ h1{
   color: black;
   background-color: rgb(173, 226, 132);
 }
+#B2:hover{
+  color: black;
+  background-color: rgb(173, 226, 132);
+}
+#B3:hover{
+  color: black;
+  background-color: rgb(173, 226, 132);
+}
+#B4:hover{
+  color: black;
+  background-color: rgb(173, 226, 132);
+}
+#B5:hover{
+  color: black;
+  background-color: rgb(173, 226, 132);
+}
+
+
+#TCCHeader{
+  float:center;
+}
 
 #TCCLogo{
   border-radius: 10px;
-  float: right;
-  margin: 20px;
+  margin-left: 41.25%;
+}
+
+.csbutt:hover{
+  color: black;
+  background-color: rgb(114, 210, 149);
+}
+
+.csbutt{
+  border:2px solid rgb(241, 241, 241);
+  width: 18%;
+  color: black;
+  background-color: rgb(173, 226, 132);
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 8px;
+  font-family: Times;
+  text-align: center;
+  margin: auto;
+
 
 }
+
+#TCCHistory{
+  font-size: 20px;
+  font-family: Times;
+  text-align: left;
+}
+
+/* * #bumhole{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+} */
