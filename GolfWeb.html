@@ -382,16 +382,16 @@
     <img  id = "Logo4" src = "BGC Pictures/BGCLogo.jpg">
 
     <div class = "csbutt">
-      <h2> <a href="http://www.kittansett.org/" target='_blank'>Course Website</a>
+      <h2> <a href="https://www.bostongolfclub.org/club/scripts/section/section.asp?NS=HP" target='_blank'>Course Website</a>
       </h2>
     </div>
 
     <div class= "csbutt">
       <h2> <a href="https://www.google.com/maps/dir/Phillips+Academy,+Main+Street,
-        +Andover,+MA/Kittansett+Club,+Point+Road,+Marion,+MA/@42.178611,-71.7236792,
-        9z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x89e308f2618c341b:
-        0x44980875f0ffb18f!2m2!1d-71.1322796!2d42.6471655!1m5!1m1!1s0x89e4c35404dc5439:
-        0x916a353627ad4707!2m2!1d-70.7173747!2d41.6775584" target='_blank'>Directions</a>
+        +Andover,+MA/Boston+Golf+Club,+Old+County+Road,+Hingham,+MA/@42.2772674,
+        -71.2169985,116035m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x89e308f2618c
+        341b:0x44980875f0ffb18f!2m2!1d-71.1322796!2d42.6471655!1m5!1m1!1s0x89e36
+        2194f6b720b:0x4ebc8b00db41df68!2m2!1d-70.8977906!2d42.1931824" target='_blank'>Directions</a>
       </h2>
     </div>
 
@@ -400,15 +400,15 @@
     <table class= "CITBL">
       <tr>
         <td class = "LC">Location:</td>
-        <td>Marion, MA</td>
+        <td>Hingham, MA</td>
       </tr>
       <tr>
         <td class = "LC">Year Founded:</td>
-        <td>1922</td>
+        <td>2004</td>
       </tr>
       <tr>
         <td class = "LC">Course Designer/Architect:</td>
-        <td>William Flynn & Frederic Hood (1922) & Stephen Kay (1991) & Gil Hanse (1998)</td>
+        <td>Gill Hanse</td>
       </tr>
       <tr>
         <td class = "LC">Number of USGA Championships:</td class = "LC">
@@ -416,7 +416,7 @@
       </tr>
       <tr>
         <td class = "LC">Course Length:</td>
-        <td>6,811 yards</td>
+        <td>7,062 yards</td>
       </tr>
       <tr>
         <td class = "LC">Par:</td>
@@ -427,7 +427,15 @@
     <h1 class = "subHeaders">General Background and History</h1>
 
     <p>
-
+      Boston Golf Club, in the south suburb of Hingham,
+      is a modern-day Pine Valley,
+      massaged by architect Gil Hanse and his team from dramatic coastal
+      topography with gashes of unsullied sand. Fairways tumble across the landscape,
+       posing some blind shots that are embraced, not criticized.
+       One stretch surrounds an old strip mine, with mining spoils
+       incorporated as chocolate drop mounds and one vein serving as a
+       "Hell's Third Acre" hazard. Boston Golf Club, like No. 46 Garden City Golf Club,
+       finishes with a grand par 3.
     </p>
 
     <h1 id = "PicH" class = "subHeaders">Pictures</h>
@@ -438,16 +446,18 @@
       var x = 0;
       var BGCimages = [];
 
-      BGCimages[0] = 'KC Pictures/OSCH.jpg';
-      BGCimages[1] = 'OS Pictures/OS7.jpg';
-      BGCimages[2] = 'OS Pictures/OS10.jpg';
-      BGCimages[3] = 'OS Pictures/OS13.jpg';
-      BGCimages[4] = 'OS Pictures/OSH17.jpg';
-      BGCimages[5] = 'OS Pictures/OSH2.jpg';
+      BGCimages[0] = 'BGC Pictures/BGCH5.jpg';
+      BGCimages[1] = 'BGC Pictures/BGCH3.jpg';
+      BGCimages[2] = 'BGC Pictures/BGCH7.jpg';
+      BGCimages[3] = 'BGC Pictures/BGCH9.jpg';
+      BGCimages[4] = 'BGC Pictures/BGCH10.jpg';
+      BGCimages[5] = 'BGC Pictures/BGCH16.jpg';
+
+
 
       function changeImgBGC()
       {
-        document.BGCslide.src = BGCimages[k];
+        document.BGCslide.src = BGCimages[x];
         if(x < BGCimages.length-1)
         {
           x++;
