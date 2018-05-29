@@ -25,8 +25,10 @@
     </a>
     </div>
 
+    <a href="#CP3">
     <div id ="B3">
       <h1 id = "numero3">3. Kittansett Club</h1>
+    </a>
     </div>
 
     <div id ="B4">
@@ -329,20 +331,113 @@
     <div id = "space"></div>
 
     <script>
-      var x = 0;
+      var k = 0;
       var KCimages = [];
 
-      KSimages[0] = 'OS Pictures/OSCH.jpg';
-      KSimages[1] = 'OS Pictures/OS7.jpg';
-      KSimages[2] = 'OS Pictures/OS10.jpg';
-      KSimages[3] = 'OS Pictures/OS13.jpg';
-      KSimages[4] = 'OS Pictures/OSH17.jpg';
-      KSimages[5] = 'OS Pictures/OSH2.jpg';
+      KCimages[0] = 'KC Pictures/KCZ.jpg';
+      KCimages[1] = 'KC Pictures/KCH4.jpg';
+      KCimages[2] = 'KC Pictures/KCH2.jpg';
+      KCimages[3] = 'KC Pictures/KCH2.jpg';
+      KCimages[4] = 'KC Pictures/KCH2.jpg';
+      KCimages[5] = 'KC Pictures/KCH2.jpg';
 
       function changeImgKC()
       {
-        document.KCslide.src = KCimages[x];
-        if(x < KCimages.length-1)
+        document.KCslide.src = KCimages[k];
+        if(k < KCimages.length-1)
+        {
+          k++;
+        }
+        else
+        {
+          k = 0;
+        }
+        setTimeout("changeImgKC()", 2000);
+      }
+    </script>
+
+    <img name = "KCslide" width = "950" height = "670" border = "15">
+
+     </script>
+  </div>
+
+
+
+
+
+  <!-- KITTANSETT CLUB-->
+  <div id = "CP3" class = "CPs">
+    <h1 id = "CourseHeader"> Kittansett Club </h1>
+    <img  id = "Logo3" src = "KC Pictures/KCLogo.jpg">
+
+    <div class = "csbutt">
+      <h2> <a href="http://www.kittansett.org/" target='_blank'>Course Website</a>
+      </h2>
+    </div>
+
+    <div class= "csbutt">
+      <h2> <a href="https://www.google.com/maps/dir/Phillips+Academy,+Main+Street,
+        +Andover,+MA/Kittansett+Club,+Point+Road,+Marion,+MA/@42.178611,-71.7236792,
+        9z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x89e308f2618c341b:
+        0x44980875f0ffb18f!2m2!1d-71.1322796!2d42.6471655!1m5!1m1!1s0x89e4c35404dc5439:
+        0x916a353627ad4707!2m2!1d-70.7173747!2d41.6775584" target='_blank'>Directions</a>
+      </h2>
+    </div>
+
+    <h3 class = "subHeaders"> Course Information</h3>
+
+    <table class= "CITBL">
+      <tr>
+        <td class = "LC">Location:</td>
+        <td>Marion, MA</td>
+      </tr>
+      <tr>
+        <td class = "LC">Year Founded:</td>
+        <td>1922</td>
+      </tr>
+      <tr>
+        <td class = "LC">Course Designer/Architect:</td>
+        <td>William Flynn & Frederic Hood (1922) & Stephen Kay (1991) & Gil Hanse (1998)</td>
+      </tr>
+      <tr>
+        <td class = "LC">Number of USGA Championships:</td class = "LC">
+        <td>0</td>
+      </tr>
+      <tr>
+        <td class = "LC">Course Length:</td>
+        <td>6,811 yards</td>
+      </tr>
+      <tr>
+        <td class = "LC">Par:</td>
+        <td>71</td>
+      </tr>
+    </table>
+
+    <h1 class = "subHeaders">General Background and History</h1>
+
+    <p>
+
+    </p>
+
+    <h1 id = "PicH" class = "subHeaders">Pictures</h>
+
+    <div id = "space"></div>
+
+    <script>
+      var x = 0;
+      var BGCimages = [];
+
+      BGCimages[0] = 'KC Pictures/OSCH.jpg';
+      BGCimages[1] = 'OS Pictures/OS7.jpg';
+      BGCimages[2] = 'OS Pictures/OS10.jpg';
+      BGCimages[3] = 'OS Pictures/OS13.jpg';
+      BGCimages[4] = 'OS Pictures/OSH17.jpg';
+      BGCimages[5] = 'OS Pictures/OSH2.jpg';
+
+      function changeImgBGC()
+      {
+        document.BGCslide.src = BGCimages[k];
+        if(x < BGCimages.length-1)
         {
           x++;
         }
@@ -350,21 +445,22 @@
         {
           x = 0;
         }
-        setTimeout("changeImgKC()", 2000);
+        setTimeout("changeImgBGC()", 2000);
       }
     </script>
 
-    <img name = "KSslide" width = "950" height = "670" border = "15">
-    script>
+    <img name = "BGCslide" width = "950" height = "670" border = "15">
+
+    <script>
       window.onload = function(){
        changeImgOS();
        changeImgTCC();
        changeImgKC();
+       changeImgBGC();
      };
      </script>
   </div>
 
-  <
 
 
 </body>

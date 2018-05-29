@@ -38,7 +38,9 @@ p{
   width:1200px;
   position: fixed;
 }
-
+a{
+  text-decoration: none;
+}
 .topButtons > div
 {
   border:2px solid rgb(241, 241, 241);
