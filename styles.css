@@ -107,6 +107,11 @@ a{
   margin-left: 36%;
 }
 
+#Logo4{
+  border-radius: 10px;
+  margin-left: 20%;
+}
+
 
 .csbutt:hover{
   color: black;
