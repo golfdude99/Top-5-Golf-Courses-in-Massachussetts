@@ -1,30 +1,72 @@
+/* Styling and formatting for my golf website
+
+    Author: John Witt
+    Computer Science 500
+    */
 body
 {
   font-family: Palatino;
   width: 1000px;
   margin: 0 auto;
-  background-color: rgb(83, 156, 221);
+  background-color: rgb(117, 178, 233);
 }
 
+/* General formating for different tags */
 p{
   margin-top: 10px;
 }
+
+/* No underlines for links */
+a{
+  text-decoration: none;
+}
+
+/* Creates space for top buttons */
 #topBar{
   width:100%;
-  height: 50px;
+  height: 38px;
   border-radius: 10px;
-  background-color: rgb(131, 168, 207);
+  background-color: rgb(117, 178, 233);
+}
+
+/* Allows the top buttons to scroll with the page */
+.topButtons
+{
+  position: fixed;
+}
+
+/* Styling for top buttons */
+.topButtons > div
+{
+  width: 188px;
+  border: 2px solid rgb(241, 241, 241);
+  float: left;
+  background-color: rgb(242, 203, 203);
+  border-radius: 10px;
+  font-size: 17px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: Times;
+  font-weight: bolder;
+  text-align: center;
+  margin: 4px;
+}
+
+/* Makes buttons change color when hovered over */
+.TBHover:hover{
+  color: black;
+  background-color: rgb(173, 226, 132);
 }
 
 #title
 {
   text-align: center;
-  font-family: Impact;
+  font-family: Palatino;
 }
 
 #intro
 {
-  margin-top: 10px;
+  margin-top: 14px;
   color: black;
   width: 100%;
   height: 20%;
@@ -34,30 +76,8 @@ p{
   padding-top: 10px;
   margin-bottom: 10px;
 }
-.topButtons{
-  width:1200px;
-  position: fixed;
-}
-a{
-  text-decoration: none;
-}
-.topButtons > div
-{
-  border:2px solid rgb(241, 241, 241);
-  float: left;
-  width: 14.9%;
-  background-color: rgb(242, 203, 203);
-  border-radius: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 8px;
-  font-family: Times;
-  text-align: center;
-  margin-top: 3px;
-  margin-left: 2px;
-  margin-right: 5.9px;
-}
 
+/* Genral style for all course pages */
 .CPs
 {
   margin-top: 10px;
@@ -67,65 +87,40 @@ a{
   border-radius: 20px;
 }
 
-#B1:hover{
-  color: black;
-  background-color: rgb(173, 226, 132);
-}
-#B2:hover{
-  color: black;
-  background-color: rgb(173, 226, 132);
-}
-#B3:hover{
-  color: black;
-  background-color: rgb(173, 226, 132);
-}
-#B4:hover{
-  color: black;
-  background-color: rgb(173, 226, 132);
-}
-#B5:hover{
-  color: black;
-  background-color: rgb(173, 226, 132);
-}
-
 #CourseHeader{
   text-align: center;
 }
 
-#Logo{
+/* TCC, OS and MH logos can be formated together */
+#Logo200{
   border-radius: 10px;
-  margin-left: 41.25%;
-}
-
-#Logo2{
-  border-radius: 10px;
-  margin-left: 40.9%;
-}
-
-#Logo3{
-  border-radius: 10px;
-  margin-left: 36%;
-}
-
-#Logo4{
-  border-radius: 10px;
-  margin-left: 20%;
-}
-
-#Logo5{
-  border-radius: 10px;
-  margin-left: 39.8%;
-  height: 200px;
+  margin-left: 390px;
   width: 200px;
+
 }
 
+/* KC and BGC logos are different shapes and are formatted individually */
+#LogoKC{
+  border-radius: 10px;
+  margin-left: 375px;
+  width: 230px;
+}
 
-.csbutt:hover{
+#LogoBGC{
+  border-radius: 10px;
+  margin-left: 340px;
+  width: 300px;
+}
+
+/* Formating "Directions" and "Course Website" buttons */
+.csbutton:hover
+{
   color: black;
   background-color: rgb(114, 210, 149);
 }
 
-.csbutt{
+.csbutton
+{
   border:2px solid rgb(241, 241, 241);
   width: 18%;
   color: black;
@@ -139,21 +134,28 @@ a{
   margin: auto;
 }
 
-#space{
-  margin-top: 15px;
-}
 .subHeaders{
   font-size: 20px;
   font-family: Times;
   text-align: left;
 }
 
-.LC{
-  font-style: italic;
+/* space between "Pictures" subheader and the slides*/
+#space
+{
+  margin-top: 15px;
 }
 
-.CITBL{
+/* Table formating and styling */
+.CITBL
+{
   text-align: left;
   padding-right: 10px;
   border-color: rgb(39, 60, 79)
+}
+
+/* Left Column */
+.LC
+{
+  font-style: italic;
 }

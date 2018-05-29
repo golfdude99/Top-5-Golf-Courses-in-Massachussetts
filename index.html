@@ -1,51 +1,58 @@
-<!DOCTYPE html>
-<!-- Questions: why Github not working?
-                why slideshow not working?
-                ok to take stuff off of wikipedia?-->
+<!-- A web page about the best 5 golf courses in Massachusetts
 
+     Author: John Witt-
+     Computer Science 500
+     Sources: Wikipedia
+              GolfTripper.com
+              GolfDigest.com
+              https://www.youtube.com/watch?v=4YQ4svkETS0-->
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" >
     <title>John's Golf Guide to Massachusetts</title>
     <link rel="stylesheet" type = "text/css" href = "styles.css">
 </head>
+
 <body>
+  <!-- Internal Link Buttons -->
   <div class ="topButtons">
 
     <a href="#CP1">
-
-    <div id ="B1">
-        <h1 id = "numero1">1. The Country Club</h1>
+    <div class ="TBHover">
+        <h>1. The Country Club</h>
     </a>
     </div>
 
     <a href="#CP2">
-    <div id ="B2">
-      <h1 id = "numero2">2. Old Sandwich G.C.</h1>
+    <div class ="TBHover">
+      <h>2. Old Sandwich G.C.</h>
     </a>
     </div>
 
     <a href="#CP3">
-    <div id ="B3">
-      <h1 id = "numero3">3. Kittansett Club</h1>
+    <div class ="TBHover">
+      <h>3. Kittansett Club</h>
     </a>
     </div>
 
     <a href="#CP4">
-    <div id ="B4">
-      <h1 id = "numero4">4. Boston Golf Club</h1>
+    <div class ="TBHover">
+      <h>4. Boston Golf Club</h>
     </a>
     </div>
 
     <a href="#CP5">
-    <div id ="B5">
-      <h1 id = "numero5">5. Myopia Hunt Club</h1>
+    <div class ="TBHover">
+      <h>5. Myopia Hunt Club</h>
       </a>
     </div>
   </div>
 
   <div id= "topBar"></div>
 
+  <!-- Top Box -->
   <div id = "intro">
     <h1 id = "title">The Best Golf Courses in the Bay State</h1>
     <p>
@@ -60,15 +67,16 @@
   <!-- THE COUNTRY CLUB -->
   <div id = "CP1" class = "CPs">
     <h1 id = "CourseHeader"> The Country Club </h1>
-    <img  id ="Logo" src = "TCC Pictures/The-Country-Club-logo.jpg">
+    <img  id ="Logo200" src = "TCC Pictures/The-Country-Club-logo.jpg">
 
-    <div class = "csbutt">
-      <h2 id = "CW1"> <a href="https://www.tcclub.org/club/scripts/public/public.asp?GRP=31412&NS=PUBLIC" target='_blank'>Course Website</a>
+    <!-- TCC Buttons for "Course Website" and "Directions" -->
+    <div class = "csbutton">
+      <h2> <a href="https://www.tcclub.org/club/scripts/public/public.asp?GRP=31412&NS=PUBLIC" target='_blank'>Course Website</a>
       </h2>
     </div>
 
-    <div id ="DirButt" class= "csbutt">
-      <h2 id = "Dir1"> <a href="https://www.google.com/maps/dir/Phillips+Academy,
+    <div class= "csbutton">
+      <h2> <a href="https://www.google.com/maps/dir/Phillips+Academy,
         +Main+Street,+Andover,+MA/The+Country+Club,+Newton,+MA/@42.5128789,
         -71.3621403,73053m/data=!3m1!1e3!4m13!4m12!1m5!1m1!1s0x89e308f2618c341b:
         0x44980875f0ffb18f!2m2!1d-71.1322796!2d42.6471655!1m5!1m1!1s0x89e378e184171fa9:
@@ -78,32 +86,37 @@
 
     <h3 class = "subHeaders"> Course Information</h3>
 
+    <!-- TCC Course Information Table -->
     <table class= "CITBL">
       <tr>
         <td class = "LC">Location:</td>
         <td>Brookline, MA</td>
       </tr>
+
       <tr>
         <td class = "LC">Year Founded:</td>
         <td>1882</td>
       </tr>
+
       <tr>
         <td class = "LC">Course Designer/Architect:</td>
         <td>Willie Campbell in 1895 (Rees Jones 1988)</td>
       </tr>
-      <tr>
-        <td class = "LC">Number of USGA Championships:</td class = "LC">
-        <td>15</td>
-    </tr>
-    <tr>
-      <td class = "LC">Course Yardage:</td>
-      <td>7,350 yards</td>
-    </tr>
-    <tr>
-      <td class = "LC">Par:</td>
-      <td>70</td>
-    </tr>
 
+      <tr>
+        <td class = "LC">Number of USGA Championships:</td>
+        <td>15</td>
+      </tr>
+
+      <tr>
+        <td class = "LC">Course Yardage:</td>
+        <td>7,350 yards</td>
+      </tr>
+
+      <tr>
+        <td class = "LC">Par:</td>
+        <td>70</td>
+      </tr>
     </table>
 
     <h1 class = "subHeaders">General Background and History</h1>
@@ -143,10 +156,11 @@
       1913 U.S. Open, and is the course played by members today.
     </p>
 
-    <h1 id = "PicH" class = "subHeaders">Pictures</h>
+    <h1 class = "subHeaders">Pictures</h>
 
     <div id = "space"></div>
 
+    <!-- TCC Slideshow -->
     <script>
       var i = 0;
       var TCCimages = [];
@@ -156,7 +170,6 @@
       TCCimages[2] = 'TCC Pictures/The-Country-Club-Brookline-Hole-4.jpg';
       TCCimages[3] = 'TCC Pictures/The-Country-Club-Brookline-Hole-12.jpg';
       TCCimages[4] = 'TCC Pictures/UphillP4.jpg';
-
 
       function changeImgTCC()
       {
@@ -172,28 +185,24 @@
         }
         setTimeout("changeImgTCC()", 2000);
       }
-      // window.onload = changeImgTCC;
-
     </script>
-
     <img name = "slide" width = "950" height = "670" border = "15">
   </div>
-
-
 
   <!-- OLD SANDWICH GOLF CLUB-->
   <div id = "CP2" class = "CPs">
     <h1 id = "CourseHeader"> Old Sandwich Golf Club </h1>
-    <img  id = "Logo2" src = "OS Pictures/OSLogo.jpg">
+    <img  id = "Logo200" src = "OS Pictures/OSLogo.jpg">
 
-    <div class = "csbutt">
-      <h2 id = "CW1"> <a href="https://www.osgolfclub.com/Club/Scripts/Home/
+    <!-- OS "Directions" and "Course Website" Buttons -->
+    <div class = "csbutton">
+      <h2> <a href="https://www.osgolfclub.com/Club/Scripts/Home/
         home.asp" target='_blank'>Course Website</a>
       </h2>
     </div>
 
-    <div id ="DirButt" class= "csbutt">
-      <h2 id = "Dir1"> <a href="https://www.google.com/maps/dir/Phillips+Academy,
+    <div class= "csbutton">
+      <h2> <a href="https://www.google.com/maps/dir/Phillips+Academy,
         +Main+Street,+Andover,+MA/Old+Sandwich+Golf+Club,+Old+Sandwich+Road,
         +Plymouth,+MA/@42.2772674,-71.2169985,116035m/data=!3m2!1e3!4b1!4m13!
         4m12!1m5!1m1!1s0x89e308f2618c341b:0x44980875f0ffb18f!2m2!1d-71.1322796
@@ -204,23 +213,28 @@
 
     <h3 class = "subHeaders"> Course Information</h3>
 
+    <!-- OS Course Information Table -->
     <table class= "CITBL">
       <tr>
         <td class = "LC">Location:</td>
         <td>Plymouth, MA</td>
       </tr>
+
       <tr>
         <td class = "LC">Year Founded:</td>
         <td>2004</td>
       </tr>
+
       <tr>
         <td class = "LC">Course Designer/Architect:</td>
         <td>Bill Coore and Ben Crenshaw</td>
       </tr>
+
       <tr>
-        <td class = "LC">Number of USGA Championships:</td class = "LC">
+        <td class = "LC">Number of USGA Championships:</td>
         <td>0</td>
       </tr>
+
       <tr>
         <td class = "LC">Course Length:</td>
         <td>6,908 yards</td>
@@ -248,6 +262,7 @@
 
     <div id = "space"></div>
 
+    <!-- OS Slideshow -->
     <script>
       var j = 0;
       var OSimages = [];
@@ -276,19 +291,18 @@
     <img name = "OSslide" width = "950" height = "670" border = "15">
   </div>
 
-
-
   <!-- KITTANSETT CLUB-->
   <div id = "CP3" class = "CPs">
     <h1 id = "CourseHeader"> Kittansett Club </h1>
-    <img  id = "Logo3" src = "KC Pictures/KCLogo.jpg">
+    <img  id = "LogoKC" src = "KC Pictures/KCLogo.jpg">
 
-    <div class = "csbutt">
+    <!-- KC "Directions" and "Course Website" Buttons -->
+    <div class = "csbutton">
       <h2> <a href="http://www.kittansett.org/" target='_blank'>Course Website</a>
       </h2>
     </div>
 
-    <div class= "csbutt">
+    <div class= "csbutton">
       <h2> <a href="https://www.google.com/maps/dir/Phillips+Academy,+Main+Street,
         +Andover,+MA/Kittansett+Club,+Point+Road,+Marion,+MA/@42.178611,-71.7236792,
         9z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x89e308f2618c341b:
@@ -299,27 +313,33 @@
 
     <h3 class = "subHeaders"> Course Information</h3>
 
+    <!-- KC Course Information Table -->
     <table class= "CITBL">
       <tr>
         <td class = "LC">Location:</td>
         <td>Marion, MA</td>
       </tr>
+
       <tr>
         <td class = "LC">Year Founded:</td>
         <td>1922</td>
       </tr>
+
       <tr>
         <td class = "LC">Course Designer/Architect:</td>
-        <td>William Flynn & Frederic Hood (1922) & Stephen Kay (1991) & Gil Hanse (1998)</td>
+        <td>William Flynn & Frederic Hood (1922)
+          & Stephen Kay (1991) & Gil Hanse (1998)</td>
       </tr>
       <tr>
-        <td class = "LC">Number of USGA Championships:</td class = "LC">
+        <td class = "LC">Number of USGA Championships:</td>
         <td>0</td>
       </tr>
+
       <tr>
         <td class = "LC">Course Length:</td>
         <td>6,811 yards</td>
       </tr>
+
       <tr>
         <td class = "LC">Par:</td>
         <td>71</td>
@@ -341,10 +361,11 @@
       he used old aerial photographs.
     </p>
 
-    <h1 id = "PicH" class = "subHeaders">Pictures</h>
+    <h1 class = "subHeaders">Pictures</h>
 
     <div id = "space"></div>
 
+    <!-- KC Slideshow -->
     <script>
       var k = 0;
       var KCimages = [];
@@ -370,25 +391,22 @@
         setTimeout("changeImgKC()", 2000);
       }
     </script>
-
     <img name = "KCslide" width = "950" height = "670" border = "15">
-
-     </script>
   </div>
-
-
 
   <!-- BOSTON GOLF CLUB-->
   <div id = "CP4" class = "CPs">
     <h1 id = "CourseHeader"> Boston Golf Club </h1>
-    <img  id = "Logo4" src = "BGC Pictures/BGCLogo.jpg">
+    <img  id = "LogoBGC" src = "BGC Pictures/BGCLogo.jpg">
 
-    <div class = "csbutt">
-      <h2> <a href="https://www.bostongolfclub.org/club/scripts/section/section.asp?NS=HP" target='_blank'>Course Website</a>
+    <!-- BGC "Course Website" and "Directions" Buttons -->
+    <div class = "csbutton">
+      <h2> <a href="https://www.bostongolfclub.org/club/scripts/section/section.asp?NS=HP"
+        target='_blank'>Course Website</a>
       </h2>
     </div>
 
-    <div class= "csbutt">
+    <div class= "csbutton">
       <h2> <a href="https://www.google.com/maps/dir/Phillips+Academy,+Main+Street,
         +Andover,+MA/Boston+Golf+Club,+Old+County+Road,+Hingham,+MA/@42.2772674,
         -71.2169985,116035m/data=!3m2!1e3!4b1!4m13!4m12!1m5!1m1!1s0x89e308f2618c
@@ -399,27 +417,33 @@
 
     <h3 class = "subHeaders"> Course Information</h3>
 
+    <!-- BGC Course Information Table -->
     <table class= "CITBL">
       <tr>
         <td class = "LC">Location:</td>
         <td>Hingham, MA</td>
       </tr>
+
       <tr>
         <td class = "LC">Year Founded:</td>
         <td>2004</td>
       </tr>
+
       <tr>
         <td class = "LC">Course Designer/Architect:</td>
         <td>Gill Hanse</td>
       </tr>
+
       <tr>
-        <td class = "LC">Number of USGA Championships:</td class = "LC">
+        <td class = "LC">Number of USGA Championships:</td>
         <td>0</td>
       </tr>
+
       <tr>
         <td class = "LC">Course Length:</td>
         <td>7,062 yards</td>
       </tr>
+
       <tr>
         <td class = "LC">Par:</td>
         <td>71</td>
@@ -433,17 +457,17 @@
       is a modern-day Pine Valley,
       massaged by architect Gil Hanse and his team from dramatic coastal
       topography with gashes of unsullied sand. Fairways tumble across the landscape,
-       posing some blind shots that are embraced, not criticized.
-       One stretch surrounds an old strip mine, with mining spoils
-       incorporated as chocolate drop mounds and one vein serving as a
-       "Hell's Third Acre" hazard. Boston Golf Club, like No. 46 Garden City Golf Club,
-       finishes with a grand par 3.
+      posing some blind shots that are embraced, not criticized.
+      One stretch surrounds an old strip mine, with mining spoils
+      incorporated as chocolate drop mounds and one vein serving as a
+      "Hell's Third Acre" hazard. Boston Golf Club finishes with a grand par 3.
     </p>
 
-    <h1 id = "PicH" class = "subHeaders">Pictures</h>
+    <h1 class = "subHeaders">Pictures</h>
 
     <div id = "space"></div>
 
+    <!-- BGC Slideshow -->
     <script>
       var x = 0;
       var BGCimages = [];
@@ -454,8 +478,6 @@
       BGCimages[3] = 'BGC Pictures/BGCH9.jpg';
       BGCimages[4] = 'BGC Pictures/BGCH10.jpg';
       BGCimages[5] = 'BGC Pictures/BGCH16.jpg';
-
-
 
       function changeImgBGC()
       {
@@ -471,21 +493,21 @@
         setTimeout("changeImgBGC()", 2000);
       }
     </script>
-
     <img name = "BGCslide" width = "950" height = "670" border = "15">
   </div>
 
   <!-- MYOPIA HUNT CLUB-->
   <div id = "CP5" class = "CPs">
     <h1 id = "CourseHeader"> Myopia Hunt Club </h1>
-    <img  id = "Logo5" src = "MH Pictures/MHLogo.jpg">
+    <img  id = "Logo200" src = "MH Pictures/MHLogo.jpg">
 
-    <div class = "csbutt">
+    <!-- MH "Directions" and "Course Website" Buttons -->
+    <div class = "csbutton">
       <h2> <a href="http://www.myopiahuntclub.com/Club/Scripts/Home/home.asp" target='_blank'>Course Website</a>
       </h2>
     </div>
 
-    <div class= "csbutt">
+    <div class= "csbutton">
       <h2> <a href="https://www.google.com/maps/dir/Phillips+Academy,+180+Main+St,
         +Andover,+MA+01810/Myopia+Hunt+Club,+Hamilton,+MA/@42.6342717,-71.143774,
         11z/data=!4m13!4m12!1m5!1m1!1s0x89e308f2618c341b:0x44980875f0ffb18f!2m2!1d-
@@ -501,22 +523,27 @@
         <td class = "LC">Location:</td>
         <td>South Hamilton, MA</td>
       </tr>
+
       <tr>
         <td class = "LC">Year Founded:</td>
         <td>1882</td>
       </tr>
+
       <tr>
         <td class = "LC">Course Designer/Architect:</td>
         <td>Herbert C. Leeds & Gill Hanse (R)</td>
       </tr>
+
       <tr>
-        <td class = "LC">Number of USGA Championships:</td class = "LC">
+        <td class = "LC">Number of USGA Championships:</td>
         <td>4</td>
       </tr>
+
       <tr>
         <td class = "LC">Course Length:</td>
         <td>6,539 yards</td>
       </tr>
+
       <tr>
         <td class = "LC">Par:</td>
         <td>72</td>
@@ -553,10 +580,11 @@
       break 80 in any round.
     </p>
 
-    <h1 id = "PicH" class = "subHeaders">Pictures</h>
+    <h1 class = "subHeaders">Pictures</h>
 
     <div id = "space"></div>
 
+    <!-- MH Slideshow -->
     <script>
       var y = 0;
       var MHimages = [];
@@ -569,9 +597,6 @@
       MHimages[5] = 'MH Pictures/MHH18.jpg';
       MHimages[6] = 'MH Pictures/MHH11.jpg';
       MHimages[7] = 'MH Pictures/MHH13.jpg';
-
-
-
 
       function changeImgMH()
       {
@@ -587,17 +612,17 @@
         setTimeout("changeImgMH()", 2000);
       }
     </script>
-
     <img name = "MHslide" width = "950" height = "670" border = "15">
-
-    <script>
-      window.onload = function(){
-       changeImgOS();
-       changeImgTCC();
-       changeImgKC();
-       changeImgBGC();
-       changeImgMH();
-     };
-     </script>
   </div>
+
+  <!-- Runs all slideshows -->
+  <script>
+    window.onload = function(){
+     changeImgOS();
+     changeImgTCC();
+     changeImgKC();
+     changeImgBGC();
+     changeImgMH();
+   };
+   </script>
 </body>
