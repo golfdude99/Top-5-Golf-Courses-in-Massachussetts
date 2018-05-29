@@ -146,15 +146,10 @@
       var TCCimages = [];
 
       TCCimages[0] = 'TCC Pictures/TCC CH.jpg';
-      TCCimages[1] = 'TCC Pictures/TCC CH.jpg';
-      TCCimages[2] = 'TCC Pictures/The-Country-Club-Brookline-Hole-3.jpg';
-      TCCimages[3] = 'TCC Pictures/The-Country-Club-Brookline-Hole-3.jpg';
-      TCCimages[4] = 'TCC Pictures/The-Country-Club-Brookline-Hole-4.jpg';
-      TCCimages[5] = 'TCC Pictures/The-Country-Club-Brookline-Hole-4.jpg';
-      TCCimages[6] = 'TCC Pictures/The-Country-Club-Brookline-Hole-12.jpg';
-      TCCimages[7] = 'TCC Pictures/The-Country-Club-Brookline-Hole-12.jpg';
-      TCCimages[8] = 'TCC Pictures/UphillP4.jpg';
-      TCCimages[9] = 'TCC Pictures/UphillP4.jpg';
+      TCCimages[1] = 'TCC Pictures/The-Country-Club-Brookline-Hole-3.jpg';
+      TCCimages[2] = 'TCC Pictures/The-Country-Club-Brookline-Hole-4.jpg';
+      TCCimages[3] = 'TCC Pictures/The-Country-Club-Brookline-Hole-12.jpg';
+      TCCimages[4] = 'TCC Pictures/UphillP4.jpg';
 
 
       function changeImgTCC()
@@ -169,7 +164,7 @@
         {
           i = 0;
         }
-        setTimeout("changeImgTCC()", 2500);
+        setTimeout("changeImgTCC()", 2000);
       }
       // window.onload = changeImgTCC;
 
@@ -232,7 +227,14 @@
     <h1 class = "subHeaders">General Background and History</h1>
 
     <p>
-      Old Sandwich Golf Club may be the craftiest Coore-Crenshaw design yet built. Amidst its pines, scrub oaks, gnarly bunkers, chocolate drop mounds, wavy fescue and briar bushes are hints of Baltusrol, National Golf Links, Pine Valley, Pinehurst No 2 and Chicago Golf Club in its cross-bunkering, hazard placement and sandy waste areas. The greens are some of the most rolling of any Coore & Crenshaw design, seeded with a half-dozen bent varieties to give them an old-fashioned mottled appearance. Nobody does old-fashioned better than Coore & Crenshaw.
+      Old Sandwich Golf Club may be the craftiest Coore-Crenshaw design yet built.
+      Amidst its pines, scrub oaks, gnarly bunkers, chocolate drop mounds,
+      wavy fescue and briar bushes are hints of Baltusrol, National Golf Links,
+      Pine Valley, Pinehurst No 2 and Chicago Golf Club in its cross-bunkering,
+      hazard placement and sandy waste areas. The greens are some of the most
+      rolling of any Coore & Crenshaw design, seeded with a half-dozen bent
+      varieties to give them an old-fashioned mottled appearance. Nobody does
+      old-fashioned better than Coore & Crenshaw.
     </p>
 
     <h1 id = "PicH" class = "subHeaders">Pictures</h>
@@ -240,9 +242,8 @@
     <div id = "space"></div>
 
     <script>
-      var i = 0;
+      var j = 0;
       var OSimages = [];
-      var time = 2500;
 
       OSimages[0] = 'OS Pictures/OSCH.jpg';
       OSimages[1] = 'OS Pictures/OS7.jpg';
@@ -253,29 +254,19 @@
 
       function changeImgOS()
       {
-        document.OSslide.src = OSimages[i];
-        if(i < OSimages.length-1)
+        document.OSslide.src = OSimages[j];
+        if(j < OSimages.length-1)
         {
-          i++;
+          j++;
         }
         else
         {
-          i = 0;
+          j = 0;
         }
-        setTimeout("changeImgOS()", time);
+        setTimeout("changeImgOS()", 2000);
       }
     </script>
     <img name = "OSslide" width = "950" height = "670" border = "15">
-
-    <script>
-    window.onload = function() {
-       changeImgOS();
-       changeImgTCC();
-     };
-     </script>
-
-
-
   </div>
 
 
@@ -285,7 +276,7 @@
     <img  id = "Logo3" src = "KC Pictures/KCLogo.jpg">
 
     <div class = "csbutt">
-      <h2 id = "CW3"> <a href="http://www.kittansett.org/" target='_blank'>Course Website</a>
+      <h2> <a href="http://www.kittansett.org/" target='_blank'>Course Website</a>
       </h2>
     </div>
 
@@ -311,7 +302,7 @@
       </tr>
       <tr>
         <td class = "LC">Course Designer/Architect:</td>
-        <td>Bill Coore and Ben Crenshaw</td>
+        <td>William Flynn & Frederic Hood (1922) & Stephen Kay (1991) & Gil Hanse (1998)</td>
       </tr>
       <tr>
         <td class = "LC">Number of USGA Championships:</td class = "LC">
@@ -330,7 +321,7 @@
     <h1 class = "subHeaders">General Background and History</h1>
 
     <p>
-      Old Sandwich Golf Club may be the craftiest Coore-Crenshaw design yet built. Amidst its pines, scrub oaks, gnarly bunkers, chocolate drop mounds, wavy fescue and briar bushes are hints of Baltusrol, National Golf Links, Pine Valley, Pinehurst No 2 and Chicago Golf Club in its cross-bunkering, hazard placement and sandy waste areas. The greens are some of the most rolling of any Coore & Crenshaw design, seeded with a half-dozen bent varieties to give them an old-fashioned mottled appearance. Nobody does old-fashioned better than Coore & Crenshaw.
+
     </p>
 
     <h1 id = "PicH" class = "subHeaders">Pictures</h>
@@ -338,42 +329,42 @@
     <div id = "space"></div>
 
     <script>
-      var i = 0;
-      var OSimages = [];
-      var time = 2500;
+      var x = 0;
+      var KCimages = [];
 
-      OSimages[0] = 'OS Pictures/OSCH.jpg';
-      OSimages[1] = 'OS Pictures/OS7.jpg';
-      OSimages[2] = 'OS Pictures/OS10.jpg';
-      OSimages[3] = 'OS Pictures/OS13.jpg';
-      OSimages[4] = 'OS Pictures/OSH17.jpg';
-      OSimages[5] = 'OS Pictures/OSH2.jpg';
+      KSimages[0] = 'OS Pictures/OSCH.jpg';
+      KSimages[1] = 'OS Pictures/OS7.jpg';
+      KSimages[2] = 'OS Pictures/OS10.jpg';
+      KSimages[3] = 'OS Pictures/OS13.jpg';
+      KSimages[4] = 'OS Pictures/OSH17.jpg';
+      KSimages[5] = 'OS Pictures/OSH2.jpg';
 
-      function changeImgOS()
+      function changeImgKC()
       {
-        document.OSslide.src = OSimages[i];
-        if(i < OSimages.length-1)
+        document.KCslide.src = KCimages[x];
+        if(x < KCimages.length-1)
         {
-          i++;
+          x++;
         }
         else
         {
-          i = 0;
+          x = 0;
         }
-        setTimeout("changeImgOS()", time);
+        setTimeout("changeImgKC()", 2000);
       }
     </script>
-    <img name = "OSslide" width = "950" height = "670" border = "15">
 
-    <script>
-    window.onload = function() {
+    <img name = "KSslide" width = "950" height = "670" border = "15">
+    script>
+      window.onload = function(){
        changeImgOS();
        changeImgTCC();
+       changeImgKC();
      };
      </script>
-
-
-
   </div>
+
+  <
+
 
 </body>
