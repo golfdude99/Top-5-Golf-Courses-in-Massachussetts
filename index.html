@@ -37,8 +37,10 @@
     </a>
     </div>
 
+    <a href="#CP5">
     <div id ="B5">
       <h1 id = "numero5">5. Myopia Hunt Club</h1>
+      </a>
     </div>
   </div>
 
@@ -376,7 +378,7 @@
 
 
 
-  <!-- Boston Golf Club-->
+  <!-- BOSTON GOLF CLUB-->
   <div id = "CP4" class = "CPs">
     <h1 id = "CourseHeader"> Boston Golf Club </h1>
     <img  id = "Logo4" src = "BGC Pictures/BGCLogo.jpg">
@@ -471,6 +473,122 @@
     </script>
 
     <img name = "BGCslide" width = "950" height = "670" border = "15">
+  </div>
+
+  <!-- MYOPIA HUNT CLUB-->
+  <div id = "CP5" class = "CPs">
+    <h1 id = "CourseHeader"> Myopia Hunt Club </h1>
+    <img  id = "Logo5" src = "MH Pictures/MHLogo.jpg">
+
+    <div class = "csbutt">
+      <h2> <a href="http://www.myopiahuntclub.com/Club/Scripts/Home/home.asp" target='_blank'>Course Website</a>
+      </h2>
+    </div>
+
+    <div class= "csbutt">
+      <h2> <a href="https://www.google.com/maps/dir/Phillips+Academy,+180+Main+St,
+        +Andover,+MA+01810/Myopia+Hunt+Club,+Hamilton,+MA/@42.6342717,-71.143774,
+        11z/data=!4m13!4m12!1m5!1m1!1s0x89e308f2618c341b:0x44980875f0ffb18f!2m2!1d-
+        71.1322796!2d42.6471655!1m5!1m1!1s0x89e3177a338f3de1:0x7738b25e566c0490!
+        2m2!1d-70.864818!2d42.6157439" target='_blank'>Directions</a>
+      </h2>
+    </div>
+
+    <h3 class = "subHeaders"> Course Information</h3>
+
+    <table class= "CITBL">
+      <tr>
+        <td class = "LC">Location:</td>
+        <td>South Hamilton, MA</td>
+      </tr>
+      <tr>
+        <td class = "LC">Year Founded:</td>
+        <td>1882</td>
+      </tr>
+      <tr>
+        <td class = "LC">Course Designer/Architect:</td>
+        <td>Herbert C. Leeds & Gill Hanse (R)</td>
+      </tr>
+      <tr>
+        <td class = "LC">Number of USGA Championships:</td class = "LC">
+        <td>4</td>
+      </tr>
+      <tr>
+        <td class = "LC">Course Length:</td>
+        <td>6,539 yards</td>
+      </tr>
+      <tr>
+        <td class = "LC">Par:</td>
+        <td>72</td>
+      </tr>
+    </table>
+
+    <h1 class = "subHeaders">General Background and History</h1>
+
+    <p>
+      Myopia Hunt Club is a foxhunting and private country club in the
+      northeastern United States, located in South Hamilton, Massachusetts,
+      northeast of Boston. In the early years of the U.S. Open, the club hosted
+      it four times: 1898, 1901, 1905, and 1908.
+    </p>
+
+    <p>
+      Myopia Hunt Club was founded 136 years ago in 1882 by J. Murray Forbes.
+      The golf course was designed and built by Herbert C. Leeds in 1894
+      and he continued working at the Club for over 30 years. Leeds tied for
+      seventh place in the 1898 U.S. Open held at Myopia Hunt Club.
+      His familiarity with the course was no doubt a factor in his ability
+      to finish so high on the leaderboard in the tournament.
+      The name "Myopia" is due to some of its founding members having come
+      from the Myopia Club in Winchester, Massachusetts, which had been founded
+      by four brothers with poor vision, or myopia. Today,
+      the Myopia Hunt Club is a drag hunt, meaning that the hounds follow a
+      laid scent rather than live fox.
+      When completed, Myopia Hunt Club measured 6,539 yards and Leeds made
+      certain that golfers would encounter a multitude of challenging features,
+      including tall mounds, deep bunkers, lightning-fast greens, blind shots
+      requiring substantial carry, deep swales, punishing rough, plateaued
+      greens, as well as a pond and paddock to avoid. So difficult was the
+      course that in the 1901 U.S. Open not a single professional was able to
+      break 80 in any round.
+    </p>
+
+    <h1 id = "PicH" class = "subHeaders">Pictures</h>
+
+    <div id = "space"></div>
+
+    <script>
+      var y = 0;
+      var MHimages = [];
+
+      MHimages[0] = 'MH Pictures/MHCH.jpg';
+      MHimages[1] = 'MH Pictures/MHH2.jpg';
+      MHimages[2] = 'MH Pictures/MHH92.jpg';
+      MHimages[3] = 'MH Pictures/MHH9.jpg';
+      MHimages[4] = 'MH Pictures/MHH7.jpg';
+      MHimages[5] = 'MH Pictures/MHH18.jpg';
+      MHimages[6] = 'MH Pictures/MHH11.jpg';
+      MHimages[7] = 'MH Pictures/MHH13.jpg';
+
+
+
+
+      function changeImgMH()
+      {
+        document.MHslide.src = MHimages[y];
+        if(y < MHimages.length-1)
+        {
+          y++;
+        }
+        else
+        {
+          y = 0;
+        }
+        setTimeout("changeImgMH()", 2000);
+      }
+    </script>
+
+    <img name = "MHslide" width = "950" height = "670" border = "15">
 
     <script>
       window.onload = function(){
@@ -478,10 +596,8 @@
        changeImgTCC();
        changeImgKC();
        changeImgBGC();
+       changeImgMH();
      };
      </script>
   </div>
-
-
-
 </body>
