@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!-- Questions: why Github not working?
+                why slideshow not working?
+                ok to take stuff off of wikipedia?-->
+
 <html>
 <head>
     <meta charset="utf-8" >
@@ -6,57 +10,53 @@
     <link rel="stylesheet" type = "text/css" href = "styles.css">
 </head>
 <body>
-
-
   <div class ="topButtons">
 
-  <a href="#TCCHeader">
+    <a href="#CP1">
 
-  <div id ="B1">
-    <h1 id = "numero1">1. The Country Club</h1>
-  </a>
+    <div id ="B1">
+        <h1 id = "numero1">1. The Country Club</h1>
+    </a>
+    </div>
+
+    <a href="#CP2">
+    <div id ="B2">
+      <h1 id = "numero2">2. Old Sandwich G.C.</h1>
+    </a>
+    </div>
+
+    <div id ="B3">
+      <h1 id = "numero3">3. Kittansett Club</h1>
+    </div>
+
+    <div id ="B4">
+      <h1 id = "numero4">4. Boston Golf Club</h1>
+    </div>
+
+    <div id ="B5">
+      <h1 id = "numero5">5. Myopia Hunt Club</h1>
+    </div>
   </div>
 
-  <div id ="B2">
-    <h1 id = "numero2">2. Old Sandwich G.C.</h1>
-  </div>
-
-  <div id ="B3">
-    <h1 id = "numero3">3. Kittansett Club</h1>
-  </div>
-
-  <div id ="B4">
-    <h1 id = "numero4">4. Boston Golf Club</h1>
-  </div>
-
-  <div id ="B5">
-    <h1 id = "numero5">5. Myopia Hunt Club</h1>
-  </div>
-  </div>
   <div id= "topBar"></div>
 
-
   <div id = "intro">
-  <h1 id = "title">The Best Golf Courses in the Bay State</h1>
-  <p>
-    <strong>Massachussetts is home to some of the best golf courses in the world and as
-    a golf enthusiast it is exciting to live in a state where prestigous and
-    historic clubs abound. This website is dedicated to informing readers about the
-    top 5 golf courses in Massachussetts as ranked by
-    <a href="https://www.golfdigest.com/story/massachusetts-best-in-state-rankings" target='_blank'>Golf Digest</a>. </strong>
-  </p>
+    <h1 id = "title">The Best Golf Courses in the Bay State</h1>
+    <p>
+      <strong>Massachussetts is home to some of the best golf courses in the world and as
+        a golf enthusiast it is exciting to live in a state where prestigous and
+        historic clubs abound. This website is dedicated to informing readers about the
+        top 5 golf courses in Massachussetts as ranked by
+        <a href="https://www.golfdigest.com/story/massachusetts-best-in-state-rankings" target='_blank'>Golf Digest</a>. </strong>
+      </p>
   </div>
 
-<!-- The Country Club -->
-  <div id= "CP1" class = "CPs">
-    <div class="list">
+  <!-- THE COUNTRY CLUB -->
+  <div id = "CP1" class = "CPs">
+    <h1 id = "CourseHeader"> The Country Club </h1>
+    <img  id ="Logo" src = "TCC Pictures/The-Country-Club-logo.jpg">
 
-    </div>
-    <h1 id = "TCCHeader"> The Country Club </h1>
-
-    <img  id ="TCCLogo" src = "The-Country-Club-logo.jpg">
-
-    <div id ="CWButt1" class = "csbutt">
+    <div class = "csbutt">
       <h2 id = "CW1"> <a href="https://www.tcclub.org/club/scripts/public/public.asp?GRP=31412&NS=PUBLIC" target='_blank'>Course Website</a>
       </h2>
     </div>
@@ -70,9 +70,37 @@
       </h2>
     </div>
 
+    <h3 class = "subHeaders"> Course Information</h3>
 
+    <table class= "CITBL">
+      <tr>
+        <td class = "LC">Location:</td>
+        <td>Brookline, MA</td>
+      </tr>
+      <tr>
+        <td class = "LC">Year Founded:</td>
+        <td>1882</td>
+      </tr>
+      <tr>
+        <td class = "LC">Course Designer/Architect:</td>
+        <td>Willie Campbell in 1895 (Rees Jones 1988)</td>
+      </tr>
+      <tr>
+        <td class = "LC">Number of USGA Championships:</td class = "LC">
+        <td>15</td>
+    </tr>
+    <tr>
+      <td class = "LC">Course Yardage:</td>
+      <td>7,350 yards</td>
+    </tr>
+    <tr>
+      <td class = "LC">Par:</td>
+      <td>70</td>
+    </tr>
 
-    <h1 id= "TCCHistory">General Information and History</h1>
+    </table>
+
+    <h1 class = "subHeaders">General Background and History</h1>
 
     <p>
       The Country Club, located in Brookline, Massachusetts,
@@ -108,8 +136,244 @@
       essentially the original 18 holes. This was the course used for the
       1913 U.S. Open, and is the course played by members today.
     </p>
+
+    <h1 id = "PicH" class = "subHeaders">Pictures</h>
+
+    <div id = "space"></div>
+
+    <script>
+      var i = 0;
+      var TCCimages = [];
+
+      TCCimages[0] = 'TCC Pictures/TCC CH.jpg';
+      TCCimages[1] = 'TCC Pictures/TCC CH.jpg';
+      TCCimages[2] = 'TCC Pictures/The-Country-Club-Brookline-Hole-3.jpg';
+      TCCimages[3] = 'TCC Pictures/The-Country-Club-Brookline-Hole-3.jpg';
+      TCCimages[4] = 'TCC Pictures/The-Country-Club-Brookline-Hole-4.jpg';
+      TCCimages[5] = 'TCC Pictures/The-Country-Club-Brookline-Hole-4.jpg';
+      TCCimages[6] = 'TCC Pictures/The-Country-Club-Brookline-Hole-12.jpg';
+      TCCimages[7] = 'TCC Pictures/The-Country-Club-Brookline-Hole-12.jpg';
+      TCCimages[8] = 'TCC Pictures/UphillP4.jpg';
+      TCCimages[9] = 'TCC Pictures/UphillP4.jpg';
+
+
+      function changeImgTCC()
+      {
+        document.slide.src = TCCimages[i];
+
+        if(i < TCCimages.length-1)
+        {
+          i++;
+        }
+        else
+        {
+          i = 0;
+        }
+        setTimeout("changeImgTCC()", 2500);
+      }
+      // window.onload = changeImgTCC;
+
+    </script>
+
+    <img name = "slide" width = "950" height = "670" border = "15">
   </div>
-<!-- Kittansett Club -->
+
+
+  <!-- OLD SANDWICH GOLF CLUB-->
+  <div id = "CP2" class = "CPs">
+    <h1 id = "CourseHeader"> Old Sandwich Golf Club </h1>
+    <img  id = "Logo2" src = "OS Pictures/OSLogo.jpg">
+
+    <div class = "csbutt">
+      <h2 id = "CW1"> <a href="https://www.osgolfclub.com/Club/Scripts/Home/
+        home.asp" target='_blank'>Course Website</a>
+      </h2>
+    </div>
+
+    <div id ="DirButt" class= "csbutt">
+      <h2 id = "Dir1"> <a href="https://www.google.com/maps/dir/Phillips+Academy,
+        +Main+Street,+Andover,+MA/Old+Sandwich+Golf+Club,+Old+Sandwich+Road,
+        +Plymouth,+MA/@42.2772674,-71.2169985,116035m/data=!3m2!1e3!4b1!4m13!
+        4m12!1m5!1m1!1s0x89e308f2618c341b:0x44980875f0ffb18f!2m2!1d-71.1322796
+        !2d42.6471655!1m5!1m1!1s0x89e4b0bf14d23051:0x934c3ff8daff34b6!2m2!
+        1d-70.606808!2d41.904803" target='_blank'>Directions</a>
+      </h2>
+    </div>
+
+    <h3 class = "subHeaders"> Course Information</h3>
+
+    <table class= "CITBL">
+      <tr>
+        <td class = "LC">Location:</td>
+        <td>Plymouth, MA</td>
+      </tr>
+      <tr>
+        <td class = "LC">Year Founded:</td>
+        <td>2004</td>
+      </tr>
+      <tr>
+        <td class = "LC">Course Designer/Architect:</td>
+        <td>Bill Coore and Ben Crenshaw</td>
+      </tr>
+      <tr>
+        <td class = "LC">Number of USGA Championships:</td class = "LC">
+        <td>0</td>
+      </tr>
+      <tr>
+        <td class = "LC">Course Length:</td>
+        <td>6,908 yards</td>
+      </tr>
+      <tr>
+        <td class = "LC">Par:</td>
+        <td>71</td>
+      </tr>
+    </table>
+
+    <h1 class = "subHeaders">General Background and History</h1>
+
+    <p>
+      Old Sandwich Golf Club may be the craftiest Coore-Crenshaw design yet built. Amidst its pines, scrub oaks, gnarly bunkers, chocolate drop mounds, wavy fescue and briar bushes are hints of Baltusrol, National Golf Links, Pine Valley, Pinehurst No 2 and Chicago Golf Club in its cross-bunkering, hazard placement and sandy waste areas. The greens are some of the most rolling of any Coore & Crenshaw design, seeded with a half-dozen bent varieties to give them an old-fashioned mottled appearance. Nobody does old-fashioned better than Coore & Crenshaw.
+    </p>
+
+    <h1 id = "PicH" class = "subHeaders">Pictures</h>
+
+    <div id = "space"></div>
+
+    <script>
+      var i = 0;
+      var OSimages = [];
+      var time = 2500;
+
+      OSimages[0] = 'OS Pictures/OSCH.jpg';
+      OSimages[1] = 'OS Pictures/OS7.jpg';
+      OSimages[2] = 'OS Pictures/OS10.jpg';
+      OSimages[3] = 'OS Pictures/OS13.jpg';
+      OSimages[4] = 'OS Pictures/OSH17.jpg';
+      OSimages[5] = 'OS Pictures/OSH2.jpg';
+
+      function changeImgOS()
+      {
+        document.OSslide.src = OSimages[i];
+        if(i < OSimages.length-1)
+        {
+          i++;
+        }
+        else
+        {
+          i = 0;
+        }
+        setTimeout("changeImgOS()", time);
+      }
+    </script>
+    <img name = "OSslide" width = "950" height = "670" border = "15">
+
+    <script>
+    window.onload = function() {
+       changeImgOS();
+       changeImgTCC();
+     };
+     </script>
+
+
+
+  </div>
+
+
+  <!-- KITTANSETT CLUB-->
+  <div id = "CP3" class = "CPs">
+    <h1 id = "CourseHeader"> Kittansett Club </h1>
+    <img  id = "Logo3" src = "KC Pictures/KCLogo.jpg">
+
+    <div class = "csbutt">
+      <h2 id = "CW3"> <a href="http://www.kittansett.org/" target='_blank'>Course Website</a>
+      </h2>
+    </div>
+
+    <div class= "csbutt">
+      <h2> <a href="https://www.google.com/maps/dir/Phillips+Academy,+Main+Street,
+        +Andover,+MA/Kittansett+Club,+Point+Road,+Marion,+MA/@42.178611,-71.7236792,
+        9z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x89e308f2618c341b:
+        0x44980875f0ffb18f!2m2!1d-71.1322796!2d42.6471655!1m5!1m1!1s0x89e4c35404dc5439:
+        0x916a353627ad4707!2m2!1d-70.7173747!2d41.6775584" target='_blank'>Directions</a>
+      </h2>
+    </div>
+
+    <h3 class = "subHeaders"> Course Information</h3>
+
+    <table class= "CITBL">
+      <tr>
+        <td class = "LC">Location:</td>
+        <td>Marion, MA</td>
+      </tr>
+      <tr>
+        <td class = "LC">Year Founded:</td>
+        <td>1922</td>
+      </tr>
+      <tr>
+        <td class = "LC">Course Designer/Architect:</td>
+        <td>Bill Coore and Ben Crenshaw</td>
+      </tr>
+      <tr>
+        <td class = "LC">Number of USGA Championships:</td class = "LC">
+        <td>0</td>
+      </tr>
+      <tr>
+        <td class = "LC">Course Length:</td>
+        <td>6,811 yards</td>
+      </tr>
+      <tr>
+        <td class = "LC">Par:</td>
+        <td>71</td>
+      </tr>
+    </table>
+
+    <h1 class = "subHeaders">General Background and History</h1>
+
+    <p>
+      Old Sandwich Golf Club may be the craftiest Coore-Crenshaw design yet built. Amidst its pines, scrub oaks, gnarly bunkers, chocolate drop mounds, wavy fescue and briar bushes are hints of Baltusrol, National Golf Links, Pine Valley, Pinehurst No 2 and Chicago Golf Club in its cross-bunkering, hazard placement and sandy waste areas. The greens are some of the most rolling of any Coore & Crenshaw design, seeded with a half-dozen bent varieties to give them an old-fashioned mottled appearance. Nobody does old-fashioned better than Coore & Crenshaw.
+    </p>
+
+    <h1 id = "PicH" class = "subHeaders">Pictures</h>
+
+    <div id = "space"></div>
+
+    <script>
+      var i = 0;
+      var OSimages = [];
+      var time = 2500;
+
+      OSimages[0] = 'OS Pictures/OSCH.jpg';
+      OSimages[1] = 'OS Pictures/OS7.jpg';
+      OSimages[2] = 'OS Pictures/OS10.jpg';
+      OSimages[3] = 'OS Pictures/OS13.jpg';
+      OSimages[4] = 'OS Pictures/OSH17.jpg';
+      OSimages[5] = 'OS Pictures/OSH2.jpg';
+
+      function changeImgOS()
+      {
+        document.OSslide.src = OSimages[i];
+        if(i < OSimages.length-1)
+        {
+          i++;
+        }
+        else
+        {
+          i = 0;
+        }
+        setTimeout("changeImgOS()", time);
+      }
+    </script>
+    <img name = "OSslide" width = "950" height = "670" border = "15">
+
+    <script>
+    window.onload = function() {
+       changeImgOS();
+       changeImgTCC();
+     };
+     </script>
+
+
+
+  </div>
 
 </body>
-<!-- </html>
